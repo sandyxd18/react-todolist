@@ -1,0 +1,107 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@import 'tailwindcss';
+
+:root {
+  input[type='password']::-ms-reveal {
+    display: none;
+  }
+
+  /* Untuk Google Chrome, Safari, dan browser berbasis WebKit lainnya */
+  input[type='password']::-webkit-outer-spin-button,
+  input[type='password']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='password']::-webkit-contacts-auto-fill-button {
+    display: none !important;
+  }
+  input[type='password']::-webkit-credentials-auto-fill-button {
+    display: none !important;
+  }
+  input[type='password']::-webkit-password-toggle-button {
+    display: none !important;
+  }
+
+  /* Untuk Firefox (tidak ada ikon mata bawaan, tetapi ini untuk konsistensi) */
+  /* Firefox tidak memiliki ikon mata bawaan seperti Chrome/Edge,
+           tetapi jika ada ekstensi yang menambahkannya,
+           kode ini mungkin membantu menyembunyikannya. */
+  input[type='password']::-moz-password-reveal {
+    display: none;
+  }
+}
+
+@theme {
+  --color-primary: #27548a;
+  --color-background: #f3f3e0;
+  --color-danger: #e22929;
+  --color-primary-foreground: #ffff;
+}
