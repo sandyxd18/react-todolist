@@ -14,4 +14,4 @@ RUN npm run build
 
 EXPOSE 5050
 
-CMD ["serve", "-s", "dist", "-l", "5050"]
+CMD ["serve", "-s", "dist", "-l", "tcp://0.0.0.0:5050"]
