@@ -2,7 +2,7 @@ import { getToken } from "./token";
 
 // const API_BASE_URL = import.meta.env.VITE_BASE_URL;
 
-const API_BASE_URL = "http://backend-service.backend.svc.cluster.local:5000"; // Replace with your actual API base URL
+const API_BASE_URL = "http://backend-service.backend.svc.cluster.local"; // Replace with your actual API base URL
 
 export const request = async (URL, method = "GET", data = null) => {
   const headers = {
